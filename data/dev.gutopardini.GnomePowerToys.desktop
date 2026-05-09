@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Gnome Power Toys
+Comment=PowerToys-inspired utilities for GNOME on Wayland
+Exec=gnome-power-toys
+Icon=dev.gutopardini.GnomePowerToys
+Terminal=false
+Categories=Utility;GTK;
+StartupNotify=true

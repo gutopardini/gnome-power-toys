@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-label="GNOME Power Toys icon">
+  <defs>
+    <linearGradient id="body" x1="250" y1="235" x2="760" y2="765" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9b6cff"/>
+      <stop offset="0.45" stop-color="#7b42ee"/>
+      <stop offset="1" stop-color="#2c1b74"/>
+    </linearGradient>
+    <linearGradient id="lip" x1="340" y1="185" x2="690" y2="270" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6a39dd"/>
+      <stop offset="0.55" stop-color="#8d5fff"/>
+      <stop offset="1" stop-color="#3a248d"/>
+    </linearGradient>
+    <linearGradient id="frontHighlight" x1="342" y1="245" x2="665" y2="702" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b995ff" stop-opacity=".62"/>
+      <stop offset=".55" stop-color="#7b49f0" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#130c3e" stop-opacity=".32"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="64%">
+      <stop offset="0" stop-color="#b793ff" stop-opacity=".65"/>
+      <stop offset=".55" stop-color="#6d45d8" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="foot" x1="430" y1="390" x2="615" y2="664" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e6e2ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="28" stdDeviation="22" flood-color="#07031d" flood-opacity=".45"/>
+    </filter>
+    <filter id="softShadow" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#150932" flood-opacity=".55"/>
+    </filter>
+    <filter id="innerShadow">
+      <feOffset dx="0" dy="4"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur" result="inverse"/>
+      <feFlood flood-color="#18045f" flood-opacity=".45" result="color"/>
+      <feComposite operator="in" in="color" in2="inverse" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+
+  <!-- transparent canvas -->
+  <g filter="url(#shadow)">
+    <!-- rear tab -->
+    <rect x="339" y="194" width="346" height="104" rx="30" fill="url(#lip)" stroke="#1d0d56" stroke-width="3"/>
+    <rect x="351" y="207" width="322" height="51" rx="24" fill="#b78fff" opacity=".23"/>
+
+    <!-- main rounded folder body -->
+    <rect x="253" y="239" width="518" height="493" rx="72" fill="url(#body)" stroke="#201051" stroke-width="4"/>
+    <rect x="263" y="248" width="498" height="468" rx="64" fill="url(#frontHighlight)"/>
+    <rect x="277" y="258" width="470" height="443" rx="55" fill="none" stroke="#c9b3ff" stroke-opacity=".25" stroke-width="3"/>
+
+    <!-- recessed smile handle -->
+    <path d="M391 293 C404 385 620 385 633 293" fill="none" stroke="#4b269f" stroke-width="43" stroke-linecap="round" opacity=".82"/>
+    <path d="M399 293 C411 366 613 366 625 293" fill="none" stroke="#b997ff" stroke-width="23" stroke-linecap="round" opacity=".7"/>
+    <path d="M404 289 C421 351 603 351 620 289" fill="none" stroke="#2a146d" stroke-width="8" stroke-linecap="round" opacity=".45"/>
+
+    <!-- GNOME foot mark simplified -->
+    <g filter="url(#softShadow)">
+      <ellipse cx="428" cy="487" rx="24" ry="35" transform="rotate(-28 428 487)" fill="url(#foot)" stroke="#4d3b9b" stroke-width="2"/>
+      <ellipse cx="465" cy="467" rx="25" ry="38" transform="rotate(12 465 467)" fill="url(#foot)" stroke="#4d3b9b" stroke-width="2"/>
+      <ellipse cx="509" cy="450" rx="27" ry="42" transform="rotate(20 509 450)" fill="url(#foot)" stroke="#4d3b9b" stroke-width="2"/>
+      <ellipse cx="580" cy="443" rx="38" ry="54" transform="rotate(48 580 443)" fill="url(#foot)" stroke="#4d3b9b" stroke-width="2"/>
+      <path d="M565 507
+               C524 488 460 511 430 548
+               C396 590 419 643 470 667
+               C511 686 558 675 585 644
+               C606 620 601 592 580 592
+               C561 592 548 605 548 622
+               C548 634 538 639 527 632
+               C513 623 520 599 543 585
+               C582 562 610 528 565 507Z"
+            fill="url(#foot)" stroke="#4d3b9b" stroke-width="3"/>
+      <path d="M556 514 C516 505 467 523 439 558 C414 588 424 625 459 650" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" opacity=".45"/>
+    </g>
+
+    <!-- subtle bottom depth -->
+    <path d="M269 658 C308 710 713 710 754 658 L754 669 C754 710 724 742 681 746 L341 746 C299 742 269 710 269 669Z" fill="#120d44" opacity=".35"/>
+  </g>
+
+  <!-- soft outer glow only inside transparent SVG -->
+  <ellipse cx="512" cy="415" rx="360" ry="330" fill="url(#glow)" opacity=".5"/>
+</svg>

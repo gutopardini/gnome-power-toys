@@ -1,0 +1,9 @@
+[package]
+name = "gnome-power-toys"
+version = "0.1.0"
+edition = "2024"
+description = "PowerToys-inspired utilities for GNOME on Wayland"
+license = "MIT"
+
+[dependencies]
+gtk = { package = "gtk4", version = "0.10", features = ["v4_14"] }

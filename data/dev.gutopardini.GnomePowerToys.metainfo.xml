@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>dev.gutopardini.GnomePowerToys</id>
+  <name>Gnome Power Toys</name>
+  <summary>PowerToys-inspired utilities for GNOME on Wayland</summary>
+  <metadata_license>MIT</metadata_license>
+  <project_license>MIT</project_license>
+  <description>
+    <p>
+      Gnome Power Toys provides small productivity tools for GNOME on Wayland.
+      The first tool extracts text from an interactive screenshot selection
+      using the desktop portal and Tesseract OCR.
+    </p>
+  </description>
+  <launchable type="desktop-id">dev.gutopardini.GnomePowerToys.desktop</launchable>
+  <categories>
+    <category>Utility</category>
+  </categories>
+  <url type="homepage">https://github.com/gutopardini/gnome-power-toys</url>
+</component>
