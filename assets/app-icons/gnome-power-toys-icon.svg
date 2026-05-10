@@ -1,16 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-label="GNOME Power Toys icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="GNOME Power Toys icon">
   <defs>
-    <linearGradient id="body" x1="250" y1="235" x2="760" y2="765" gradientUnits="userSpaceOnUse">
+    <linearGradient id="body" x1="192" y1="202" x2="832" y2="846" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#9b6cff"/>
       <stop offset="0.45" stop-color="#7b42ee"/>
       <stop offset="1" stop-color="#2c1b74"/>
     </linearGradient>
-    <linearGradient id="lip" x1="340" y1="185" x2="690" y2="270" gradientUnits="userSpaceOnUse">
+    <linearGradient id="lip" x1="282" y1="150" x2="744" y2="282" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#6a39dd"/>
       <stop offset="0.55" stop-color="#8d5fff"/>
       <stop offset="1" stop-color="#3a248d"/>
     </linearGradient>
-    <linearGradient id="frontHighlight" x1="342" y1="245" x2="665" y2="702" gradientUnits="userSpaceOnUse">
+    <linearGradient id="frontHighlight" x1="308" y1="226" x2="716" y2="760" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#b995ff" stop-opacity=".62"/>
       <stop offset=".55" stop-color="#7b49f0" stop-opacity=".16"/>
       <stop offset="1" stop-color="#130c3e" stop-opacity=".32"/>
@@ -20,7 +20,7 @@
       <stop offset=".55" stop-color="#6d45d8" stop-opacity=".14"/>
       <stop offset="1" stop-color="#000000" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="foot" x1="430" y1="390" x2="615" y2="664" gradientUnits="userSpaceOnUse">
+    <linearGradient id="foot" x1="388" y1="362" x2="650" y2="704" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#ffffff"/>
       <stop offset="1" stop-color="#e6e2ff"/>
     </linearGradient>
@@ -41,44 +41,44 @@
   </defs>
 
   <!-- transparent canvas -->
-  <g filter="url(#shadow)">
+  <g transform="translate(0,14) scale(1.30) translate(-112,-104)" filter="url(#shadow)">
     <!-- rear tab -->
-    <rect x="339" y="194" width="346" height="104" rx="30" fill="url(#lip)" stroke="#1d0d56" stroke-width="3"/>
-    <rect x="351" y="207" width="322" height="51" rx="24" fill="#b78fff" opacity=".23"/>
+    <rect x="298" y="160" width="430" height="132" rx="38" fill="url(#lip)" stroke="#1d0d56" stroke-width="3"/>
+    <rect x="314" y="175" width="402" height="66" rx="30" fill="#b78fff" opacity=".23"/>
 
     <!-- main rounded folder body -->
-    <rect x="253" y="239" width="518" height="493" rx="72" fill="url(#body)" stroke="#201051" stroke-width="4"/>
-    <rect x="263" y="248" width="498" height="468" rx="64" fill="url(#frontHighlight)"/>
-    <rect x="277" y="258" width="470" height="443" rx="55" fill="none" stroke="#c9b3ff" stroke-opacity=".25" stroke-width="3"/>
+    <rect x="194" y="210" width="640" height="604" rx="88" fill="url(#body)" stroke="#201051" stroke-width="4"/>
+    <rect x="208" y="222" width="614" height="574" rx="78" fill="url(#frontHighlight)"/>
+    <rect x="224" y="236" width="582" height="542" rx="68" fill="none" stroke="#c9b3ff" stroke-opacity=".22" stroke-width="3"/>
 
     <!-- recessed smile handle -->
-    <path d="M391 293 C404 385 620 385 633 293" fill="none" stroke="#4b269f" stroke-width="43" stroke-linecap="round" opacity=".82"/>
-    <path d="M399 293 C411 366 613 366 625 293" fill="none" stroke="#b997ff" stroke-width="23" stroke-linecap="round" opacity=".7"/>
-    <path d="M404 289 C421 351 603 351 620 289" fill="none" stroke="#2a146d" stroke-width="8" stroke-linecap="round" opacity=".45"/>
+    <path d="M332 270 C352 406 676 406 696 270" fill="none" stroke="#4b269f" stroke-width="50" stroke-linecap="round" opacity=".82"/>
+    <path d="M340 270 C358 377 668 377 686 270" fill="none" stroke="#b997ff" stroke-width="28" stroke-linecap="round" opacity=".7"/>
+    <path d="M346 266 C368 355 658 355 680 266" fill="none" stroke="#2a146d" stroke-width="8" stroke-linecap="round" opacity=".45"/>
 
     <!-- GNOME foot mark simplified -->
     <g filter="url(#softShadow)">
-      <ellipse cx="428" cy="487" rx="24" ry="35" transform="rotate(-28 428 487)" fill="url(#foot)" stroke="#4d3b9b" stroke-width="2"/>
-      <ellipse cx="465" cy="467" rx="25" ry="38" transform="rotate(12 465 467)" fill="url(#foot)" stroke="#4d3b9b" stroke-width="2"/>
-      <ellipse cx="509" cy="450" rx="27" ry="42" transform="rotate(20 509 450)" fill="url(#foot)" stroke="#4d3b9b" stroke-width="2"/>
-      <ellipse cx="580" cy="443" rx="38" ry="54" transform="rotate(48 580 443)" fill="url(#foot)" stroke="#4d3b9b" stroke-width="2"/>
-      <path d="M565 507
-               C524 488 460 511 430 548
-               C396 590 419 643 470 667
-               C511 686 558 675 585 644
-               C606 620 601 592 580 592
-               C561 592 548 605 548 622
-               C548 634 538 639 527 632
-               C513 623 520 599 543 585
-               C582 562 610 528 565 507Z"
+      <ellipse cx="366" cy="458" rx="30" ry="43" transform="rotate(-28 366 458)" fill="url(#foot)" stroke="#4d3b9b" stroke-width="2"/>
+      <ellipse cx="425" cy="432" rx="32" ry="47" transform="rotate(12 425 432)" fill="url(#foot)" stroke="#4d3b9b" stroke-width="2"/>
+      <ellipse cx="488" cy="410" rx="34" ry="52" transform="rotate(20 488 410)" fill="url(#foot)" stroke="#4d3b9b" stroke-width="2"/>
+      <ellipse cx="586" cy="402" rx="48" ry="68" transform="rotate(48 586 402)" fill="url(#foot)" stroke="#4d3b9b" stroke-width="2"/>
+      <path d="M564 472
+               C509 446 429 476 391 524
+               C348 578 381 650 443 679
+               C494 704 552 686 586 646
+               C611 616 602 580 576 580
+               C553 580 538 596 538 616
+               C538 629 526 636 514 628
+               C499 618 507 587 535 569
+               C587 537 620 504 564 472Z"
             fill="url(#foot)" stroke="#4d3b9b" stroke-width="3"/>
-      <path d="M556 514 C516 505 467 523 439 558 C414 588 424 625 459 650" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" opacity=".45"/>
+      <path d="M547 480 C495 468 432 494 396 537 C364 575 382 625 432 657" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" opacity=".45"/>
     </g>
 
     <!-- subtle bottom depth -->
-    <path d="M269 658 C308 710 713 710 754 658 L754 669 C754 710 724 742 681 746 L341 746 C299 742 269 710 269 669Z" fill="#120d44" opacity=".35"/>
+    <path d="M210 684 C264 770 760 770 814 684 L814 696 C814 748 770 810 710 816 L314 816 C254 810 210 748 210 696Z" fill="#120d44" opacity=".30"/>
   </g>
 
   <!-- soft outer glow only inside transparent SVG -->
-  <ellipse cx="512" cy="415" rx="360" ry="330" fill="url(#glow)" opacity=".5"/>
+  <ellipse cx="512" cy="434" rx="438" ry="400" fill="url(#glow)" opacity=".48"/>
 </svg>

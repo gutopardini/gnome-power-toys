@@ -403,18 +403,18 @@ fn install_css() {
     provider.load_from_string(
         r#"
         window.gpt-window {
-            background: rgba(18, 20, 24, 0.92);
+            background: rgba(19, 22, 27, 0.96);
         }
 
         .gpt-header {
-            background: rgba(18, 20, 24, 0.90);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+            background: rgba(20, 23, 29, 0.86);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         }
 
         .gpt-header-icon {
             margin-left: 6px;
             margin-right: 12px;
-            border-radius: 8px;
+            border-radius: 10px;
         }
 
         .gpt-header-title {
@@ -424,25 +424,22 @@ fn install_css() {
 
         .gpt-shell {
             background:
-                linear-gradient(135deg, rgba(48, 55, 66, 0.50), rgba(15, 17, 22, 0.92));
+                linear-gradient(135deg, rgba(46, 54, 64, 0.42), rgba(16, 18, 23, 0.94));
             color: #f3f4f7;
-            border-radius: 10px;
+            border-radius: 18px;
         }
 
         .gpt-sidebar {
-            background: rgba(255, 255, 255, 0.055);
-            border: 1px solid rgba(255, 255, 255, 0.10);
-            border-radius: 8px 0 0 8px;
-            padding: 14px;
+            background: rgba(255, 255, 255, 0.035);
+            border-right: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 18px 0 0 18px;
+            padding: 18px 16px;
         }
 
         .gpt-content {
-            background: rgba(8, 10, 14, 0.34);
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
-            border-right: 1px solid rgba(255, 255, 255, 0.08);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 0 8px 8px 0;
-            padding: 18px;
+            background: rgba(8, 10, 14, 0.22);
+            border-radius: 0 18px 18px 0;
+            padding: 18px 20px;
         }
 
         .gpt-brand {
@@ -451,10 +448,10 @@ fn install_css() {
 
         .gpt-tool-button {
             min-height: 38px;
-            padding: 8px 10px;
-            border-radius: 6px;
+            padding: 8px 12px;
+            border-radius: 12px;
             background: transparent;
-            color: rgba(243, 244, 247, 0.76);
+            color: rgba(243, 244, 247, 0.8);
             border: 1px solid transparent;
         }
 
@@ -463,26 +460,25 @@ fn install_css() {
         }
 
         .gpt-tool-active {
-            background: rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.08);
             color: #ffffff;
-            border-color: rgba(255, 255, 255, 0.16);
         }
 
         .gpt-toolbar,
         .gpt-result-frame {
-            background: rgba(255, 255, 255, 0.075);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: 8px;
-            box-shadow: 0 14px 34px rgba(0, 0, 0, 0.26);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 16px;
+            box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
         }
 
         .gpt-toolbar {
-            padding: 8px;
+            padding: 10px;
         }
 
         .gpt-entry {
-            background: rgba(0, 0, 0, 0.20);
-            border-radius: 6px;
+            background: rgba(0, 0, 0, 0.18);
+            border-radius: 10px;
             min-width: 190px;
         }
 
@@ -502,26 +498,25 @@ fn install_css() {
         .gpt-icon-button {
             min-width: 34px;
             min-height: 34px;
-            border-radius: 6px;
+            border-radius: 10px;
         }
 
         .gpt-copy-button {
-            background: rgba(47, 211, 162, 0.20);
+            background: rgba(47, 211, 162, 0.16);
             color: #dfffee;
-            border: 1px solid rgba(82, 235, 186, 0.38);
-            box-shadow: 0 8px 22px rgba(47, 211, 162, 0.16);
+            border: 1px solid rgba(82, 235, 186, 0.22);
+            box-shadow: 0 8px 20px rgba(47, 211, 162, 0.10);
         }
 
         .gpt-copy-button:hover {
-            background: rgba(47, 211, 162, 0.32);
-            border-color: rgba(112, 255, 205, 0.55);
+            background: rgba(47, 211, 162, 0.24);
         }
 
         .gpt-copy-success {
             background: rgba(82, 235, 186, 0.58);
             color: #07130f;
-            border-color: rgba(186, 255, 229, 0.90);
-            box-shadow: 0 0 0 3px rgba(82, 235, 186, 0.22), 0 12px 34px rgba(47, 211, 162, 0.34);
+            border-color: rgba(186, 255, 229, 0.78);
+            box-shadow: 0 0 0 2px rgba(82, 235, 186, 0.18), 0 12px 28px rgba(47, 211, 162, 0.22);
         }
 
         .gpt-result-frame {
